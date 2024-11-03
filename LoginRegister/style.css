@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #fff3e0, #ffe0b2); /* Gradient background */
+    color: #333; /* Dark text for readability */
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+h1, h2, h3 {
+    color: #d84315; /* Darker orange for headings */
+    margin-bottom: 10px; /* Adjusted margin */
+    padding: 10px; /* Adjusted padding */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ff7043, #ff5722); /* Gradient for header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for 3D effect */
+    border-radius: 10px; /* Rounded corners */
+    transform: translateZ(10px); /* Lift effect */
+}
+
+.header .left, .header .right {
+    display: inline-block;
+}
+
+.header .left a, .header .right a {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #ff7043, #ff5722); /* Gradient for buttons */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s; /* Added transform for 3D effect */
+}
+
+.header .left a:hover, .header .right a:hover {
+    background: linear-gradient(to right, #ff5722, #d84315); /* Darker gradient on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Container Styles */
+.container {
+    width: 50%;
+    margin: 40px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for container */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 50px;
+}
+
+/* Main Content Styles */
+.main-content {
+    background: #fff; /* White background */
+    padding: 20px; /* Add padding to the main content */
+    border: 1px solid #ffccbc; /* Light peach border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for main content */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 95%; /* Full width for sidebar */
+    background: #ffe0b2; /* Light peach sidebar */
+    padding: 20px;
+    border: 1px solid #ffccbc; /* Light peach border */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 50px; /* Space between main content and sidebar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for sidebar */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    border-bottom: 1px solid #ffccbc; /* Light peach border */
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #d84315; /* Darker orange */
+    transition: color 0.3s, transform 0.2s; /* Added transform for hover effect */
+}
+
+.sidebar li a:hover {
+    color: #bf360c; /* Even darker orange on hover */
+    transform: translateX(5px); /* Slide effect on hover */
+}
+
+/* Input Styles */
+.input-container {
+    margin-bottom: 20px; /* Space between input fields */
+    align-items: center;
+}
+
+.input-container label {
+    display: block; /* Make label a block element to stack vertically */
+    margin-bottom: 5px; /* Space between label and input */
+    color: #d84315; /* Darker orange */
+}
+
+.input-container input[type="text"], .input-container input[type="password"], .input-container input[type="number"] {
+    width: 250px; /* Adjusted width for input boxes */
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ffccbc; /* Light peach border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for input fields */
+}
+
+/* Employee Container Styles */
+.employee-container, .view-user-container, .delete-confirmation-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ffccbc; /* Light peach border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba (0, 0, 0, 0.1); /* Shadow for containers */
+    transform: translateZ(5px); /* Lift effect */
+}
+
+.employee-container h3, .view-user-container h3, .delete-confirmation-container h1 {
+    margin-bottom: 10px;
+}
+
+/* Delete Button Styles */
+.deleteBtn {
+    text-align: left; /* Align button to the left */
+    margin-top: auto; /* Push the button to the bottom of the container */
+}
+
+.deleteBtn input[type="submit"] {
+    background: linear-gradient(to right, #ff7043, #ff5722); /* Gradient for delete button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s; /* Added transform for 3D effect */
+}
+
+.deleteBtn input[type="submit"]:hover {
+    background: linear-gradient(to right, #ff5722, #d84315); /* Darker gradient on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for table */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ffccbc; /* Light peach border */
+}
+
+th {
+    background: linear-gradient(to right, #ff7043, #ff5722); /* Gradient for table header */
+    color: #fff;
+}
+
+/* Additional Styles */
+.editAndDelete {
+    margin-top: 20px;
+}
+
+.editAndDelete a {
+    text-decoration: none;
+    color: #d84315; /* Darker orange */
+    margin-right: 10px;
+    transition: color 0.3s, transform 0.2s; /* Added transform for hover effect */
+}
+
+.editAndDelete a:hover {
+    color: #bf360c; /* Even darker orange on hover */
+    transform: translateX(5px); /* Slide effect on hover */
+}
+
+.deleteBtn {
+    background: linear-gradient(to right, #ff7043, #ff5722); /* Gradient for delete button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s; /* Added transform for 3D effect */
+}
+
+.deleteBtn:hover {
+    background: linear-gradient(to right, #ff5722, #d84315); /* Darker gradient on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Center Container Styles */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+/* Login and Register Container Styles */
+.login-container, .register-container {
+    background: #fff; /* White background */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for containers */
+    width: 400px; /* Fixed width for the container */
+    display: block;
+    transform: translateY(0); /* Initial transform for 3D effect */
+    transition: transform 0.2s; /* Transition for 3D effect */
+}
+
+.login-container:hover, .register-container:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
